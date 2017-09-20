@@ -1,4 +1,3 @@
-# hid302
 # Comments
 
 * Mind the ```quotes and do not forget them```
@@ -9,8 +8,8 @@
 ```
 owner:
     hid: 302
-    name: 
-    url: 
+    name: Sushant Athaley
+    url: https://github.com/bigdata-i523/hid302
 ```
 
 # Paper 1
@@ -18,14 +17,14 @@ owner:
 ```
 paper1:
    author: 
-   - Gregor von Laszewski
-   - Fugang Wang
+   - Sushant Athaley
    hid:
-   - 000
-   - 001
-   title: This is my paper about xyz
-   abstract: This paper showcases tis and that and the other
-   url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
+   - 302
+   title: Big Data Application in Restaurant Industry
+   abstract: This paper explore big data usage in resturant industry
+   url: https://github.com/bigdata-i523/hid302/paper1/paper1.pdf
+   type: latex
+   status: in progress
 ```
    
 # Paper 2
@@ -33,12 +32,14 @@ paper1:
 ```
 paper2:
    author: 
-   - Gregor von Laszewski
+   - Sushant Athaley
    hid:
-   - 000
-   title: This is my paper about the other abc
-   abstract: This paper showcases tis and that and the other in regards to abc
-   url: https://github.com/bigdata-i523/sample-hid000/paper2/paper2.pdf   
+   - 302
+   title: TBD
+   abstract: TBD
+   url: https://github.com/bigdata-i523/hid302/paper2/paper2.pdf
+   type: latex
+   status: not started
 ```
 
 # Project 
@@ -47,15 +48,17 @@ We will assign new pids for you when we approve the project and reports
 Just use one type and delete the line with 
 
 ```
-paper2:
+project:
    type: project
    type: report
    author: 
-   - Gregor von Laszewski
+   - Sushant Athaley
    hid:
-   - 000
-   title: Benchmarking a BigData Docker deployment
-   abstract: This paper showcases tis and that and the other 
+   - 302
+   title: TBD
+   abstract: TBD 
    url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
+   type: latex
+   status: not started
 ```
    
