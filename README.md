@@ -35,8 +35,8 @@ paper2:
    - Sushant Athaley
    hid:
    - 302
-   title: TBD
-   abstract: TBD
+   title: Hadoop and MongoDB in support of Big Data Applications and Analytics
+   abstract: This paper will focus on how technologies like Hadoop and MongoDB is helping in big data application
    url: https://github.com/bigdata-i523/hid302/paper2/paper2.pdf
    type: latex
    status: not started
@@ -57,7 +57,7 @@ project:
    - 302
    title: TBD
    abstract: TBD 
-   url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
+   url: https://github.com/bigdata-i523/sample-pid302/project/report.pdf
    type: latex
    status: not started
 ```
