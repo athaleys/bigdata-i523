@@ -22,7 +22,7 @@ paper1:
    - 302
    title: Big Data Application in Restaurant Industry
    abstract: This paper explore big data usage in resturant industry
-   url: https://github.com/bigdata-i523/hid302/paper1/paper1.pdf
+   url: https://github.com/bigdata-i523/hid302/paper1/report.pdf
    type: latex
    status: in progress
 ```
@@ -37,7 +37,7 @@ paper2:
    - 302
    title: Hadoop and MongoDB in support of Big Data Applications and Analytics
    abstract: This paper will focus on how technologies like Hadoop and MongoDB is helping in big data application
-   url: https://github.com/bigdata-i523/hid302/paper2/paper2.pdf
+   url: https://github.com/bigdata-i523/hid302/paper2/report.pdf
    type: latex
    status: not started
 ```
