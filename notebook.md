@@ -4,6 +4,8 @@
 
 # Theory
 * 9/10/2017 - completed 3.1. Introduction, 3.1.1. Course Motivation, 3.1.1.1. Emerging Technologies, 3.1.1.2. Data Deluge
+* 9/20/2017 - gone thorugh 3.3.3.2. Database(SQL) Use Case Classification
+* 9/20/2017 - gone through 3.5. e-Commerce and LifeStyle Case Study
 
 # Practice
 
@@ -13,6 +15,8 @@
 * 9/10/2017 - Read 2.1. Communicating Research and 2.2. LaTeX from writing track
 * 9/10/2017 - Watched video on Sharelatex
 * 9/10/2017 - Submitted papaer 1 topic
+* 9/19/2017 - Submitted papaer 2 topic
+* 9/19/2017 - Watched jabref video. Installed jabref
 
 # Project
 
