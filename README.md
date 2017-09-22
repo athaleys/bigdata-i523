@@ -41,24 +41,3 @@ paper2:
    type: latex
    status: not started
 ```
-
-# Project 
-
-We will assign new pids for you when we approve the project and reports   
-Just use one type and delete the line with 
-
-```
-project:
-   type: project
-   type: report
-   author: 
-   - Sushant Athaley
-   hid:
-   - 302
-   title: TBD
-   abstract: TBD 
-   url: https://github.com/bigdata-i523/sample-pid302/project/report.pdf
-   type: latex
-   status: not started
-```
-   
