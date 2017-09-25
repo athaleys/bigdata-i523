@@ -17,6 +17,8 @@
 * 9/10/2017 - Submitted papaer 1 topic
 * 9/19/2017 - Submitted papaer 2 topic
 * 9/19/2017 - Watched jabref video. Installed jabref
+* 9/22/2017 - Created paper1 folder structure, created account in sharelatex, started research on paper1
+* 9/22/2017 - Started writing paper1 in sharlatex, started using jabref to capture references
 
 # Project
 
