@@ -24,7 +24,7 @@ paper1:
    abstract: Paper explore big data usage in resturant industry
    url: https://github.com/bigdata-i523/hid302/paper1/report.pdf
    type: latex
-   status: 95%
+   status: 99%
    chapter: Buisiness
 ```
    
