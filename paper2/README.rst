@@ -1,4 +1,4 @@
-Title: Big Data Application in Restaurant Industry
+Title: Hadoop and MongoDB in support of Big Data Applications and Analytics
 
 Author: Sushant Athaley
 
