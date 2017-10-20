@@ -21,6 +21,7 @@
 * 9/22/2017 - Started writing paper1 in sharlatex, started using jabref to capture references
 * 9/29/2017 - Worked on paper1
 * 10/8/2017 - submitted paper1, created folder structure for paper2
+* 10/20/2017 - fixed paper1 review issues, reviewed paper HID203 - Big Data Analytics using Spark, setup new template for paper2 in sharelatex
 
 # Project
 
