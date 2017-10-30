@@ -22,7 +22,7 @@ paper2:
         - Sushant Athaley
     hid:
         - 302
-    status: not started
+    status: 30%
     title: Hadoop and MongoDB in support of Big Data Applications and Analytics
     type: latex
     url: https://github.com/bigdata-i523/hid302/paper2/report.pdf
