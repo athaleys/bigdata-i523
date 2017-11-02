@@ -3,7 +3,7 @@
 \input{format/i523}
 
 \begin{document}
-\title{Big Data Application in Restaurant Industry}
+\title{Hadoop and MongoDB in support of Big Data Applications and Analytics}
 
 
 \author{Sushant Athaley}
@@ -12,89 +12,137 @@
 }
 \email{sathaley@iu.edu}
 
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{G. v. Laszewski}
 
 
 \begin{abstract}
-This paper provides insight into how big data can be used in the restaurant industry. It also explores how big data can be collected and analyzed so that it helps restaurant industry to do better in profit margins and give their customer a great hospitality experience. This paper will try to find out current technologies and solutions available in big data processing for the restaurant industry. It will also focus on various challenges involved in using big data in the restaurant business. This paper is a review/research paper which considers information from various sources like articles, books and web to provide the information. 
+Big data processing is beyond capability of traditional tool. It requires specialized tools like Hadoop and MongoDB. We will explore Haddop and MongoDB technically as a tool and how they provide support/help in big data analysis.
+TBD
 \end{abstract}
 
-\keywords{i523, hid302, big data, restaurant, application, analytics}
+\keywords{i523, hid302, big data, Hadoop, MongoDB}
 
 
 \maketitle
 
+
 \section{Introduction}
-Big data is revolutionizing the way business is getting conducted in various industries. The retailer like Amazon uses it to provide personalized buying suggestions and social networking site like LinkedIn uses it to connect more people. Question is, do we have big data available for the restaurant industry and how big data application is going to be beneficial. The restaurant industry is facing challenges like shrinking labor pool, moderate economic growth, costly labor, challenging profit margin, high competition, moderate sales growth and growing expectation from the customer on the dining experience, can big data application help overcome these challenges.\cite{www-restaurant-challenges}
 
-The paper is structured as follows. Section "Ingredient" captures various data points available in the restaurant industry for the big data analysis. Section "Consume" provides details on how data can be gathered in the restaurant industry. Section "Recipe for Success" captures various big data analysis which can help to solve different problems. Section "Solution and Tools Available" provides information on current big data solutions and tools available for the restaurant industry. Section "Flavourful Implementation" provides real-life examples of big data applications in the restaurant industry. Section "Hell's Kitchen" capture various challenges involved in using big data for the restaurant industry. Finally, section "Conclusion" concludes the paper.
+Describe about big data, hadoop and mongodb. Describe what this paper will do.
+Papers organization.
+
+\section{Big Data}
+Big Data is defined in lot many different ways but one of the interesting ways it has been defined is in terms of three V's which are Volume, Velocity, and Variety. Big data is generated in great \emph{volume} typically in the gigabyte or more which makes data processing difficult. Data \emph{velocity} has been increased due to the real-time data streaming from various applications like social media or different type of sensors recording data continuously. Big data comes in \emph{variety} of format like structured or unstructured data. Data varies in various format like text, pictures, audio, videos, 3D, social media and so on. These big data characteristics pose challenges in terms of overall data lifecycle management. Some of the examples of big data usage are the recommendation service, predictive analytics, data analytics, pattern identification, and machine learning. Traditional systems are good for small or medium data processing but unable to provide support for the big data. Big data need specialized technologies and tools to handle its characteristics. The technologies which can solve big data problem should have capabilities like distributed computing system, massively parallel processing, NoSQL, and analytical database \cite[Ch.\ 1, p. 4]{AchariShiva2015HE}. Can Hadoop or MongoDB be those technologies who can provide that support?  
+
+\section{Hadoop}
+introduce hadoop, architecture, support to big data, real life examples
+Apache foundation describes Hadoop as ``The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures'' \cite{www-hadoop}. In other words, Hadoop provides a framework to store data in the distributed manner and provides the capability to run data analysis in the distributed way.
+
+``Currently Hadoop project includes following modules:
+\begin{itemize}
+\item {\bf Hadoop Common}: The common utilities that support the other Hadoop modules.
+\item {\bf Hadoop Distributed File System (HDFS)}: A distributed file system that provides high-throughput access to application data.
+\item {\bf Hadoop YARN}: A framework for job scheduling and cluster resource management.
+\item {\bf Hadoop MapReduce}: A YARN-based system for parallel processing of large data sets'' \cite{www-hadoop}.
+\end{itemize}
+
+\subsection{Hadoop Common}
+
+\subsection{Hadoop Distributed File System (HDFS)}
+Hadoop Distributed File System (HDFS) is the default distributed file system provided by the Hadoop. HDFS serves as storage mechanism in the Hadoop framework. HDFC specifically designed to process large data set and run on low cost hardware. It is high fault tolerant which contains mechanism for quick fault detection and auto recovery. HDFS is designed to port across heterogeneous hardware and software platform. It does data computation on same node instead of moving data to the server which is faster as well as avoid network congestion. It provides scalability by adding or removing nodes in the HDFS cluster and can support hundreds of nodes in single cluster \cite{www-hdfs-arch}. Figure \ref{f:hdfs-arch} shows HDFS architecture.
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/hdfsArch.PNG}
+  \caption{HDFS Architecture \cite{www-hdfs-arch}}\label{f:hdfs-arch}
+\end{figure}
+
+HDFS is based on master/slave architecture where NameNode is the master server and DataNodes are the slave nodes. There can be only one NameNode server which manages file system name space and all read write requests. NameNode doesn't store any data but contains all the meta-data about files and DataNodes. DataNode contains actual data and they can be multiple in numbers usually one per node. DataNodes are responsible for the create, delete, replicate of the datablocks on the node as per the instruction by the NameNode. It also sends heartbeat message to NameNode which helps in identifing the failure nodes. If heartbeat is not received by NameNode in specified interval then that DataNode is marked as dead and NameNode usage different DataNode.
+
+\subsection{Hadoop YARN}
+
+\subsection{Hadoop MapReduce}
+
+\subsection{Big Data Support}
+
+\section{MongoDB}
+
+\section{figures}
+
+In Figure \ref{f:fly} we show a fly. Please note that because we use
+just columwidth that the size of the figure will change to the
+columnwidth of the paper once we change the layout to final. CHnaging
+the layout to final should not be done by you. All figures will be
+listed at the end.
+
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/fly.pdf}
+  \caption{Example caption}\label{f:fly}
+\end{figure}
+
+When copying the example, please do not check in the images from the
+examples into your images directory as you will not need them for your
+paper. Instead use images that you like to include. If you do not have
+any images, do not dreate the images folder.
+
+\section{Tables}
+
+In case you need to create tables, you can do this with online tools
+(if you do not mind sharing your data) such as
+\url{https://www.tablesgenerator.com/} or other such tools (please
+google for them). They even allow you to manage tables as CSV.
+
+or generate them by hand while using the provided template in Table\ref{t:mytable}. Not ethat
+the caption is before the tabular environment.
+
+\begin{table}[htb]
+\centering
+\caption{My caption}
+\label{t:mytabble}
+\begin{tabular}{lll}
+1 & 2 & 3 \\
+\hline
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{tabular}
+\end{table}
+
+\section{Long example}
+
+If you like to see a more elaborate example, please look at
+report-long.tex. 
+
+\section{Conclusion}
+
+Put here an conclusion. Conlcusions and abstracts must not have any
+citations in the section.
 
 
-\section{Big Data for Restaurant/Ingredient}
-To understand how big data analytics will help, we first need to find out what are the data points present in the restaurant industry which can be considered as big data. As one of the V-variety of big data, the restaurant also has structured and unstructured data. Structured data is something which is getting generated inside the restaurant and unstructured data is something which is outside of the restaurant.
-\subsection{Structured Data}
-Structured data is well formatted, easy to understand and analyze. Restaurant POS(point of sale) system shows what’s selling, where, and at what time\cite{www-qsr}. Food and beverage cost, labor cost, product mix, rent cost are obvious data points. Raw material required for preparation, menu, ingredient consideration, meal preparation, product availability from the supplier, prices of products comes from the kitchen of the restaurant. Staffing schedule, table turnover, bar management, wages, salaries, tips, customer feedback is data. The number of time employee coming late, number of times drinks provided as comp due to server error is data.\cite{www-restaurant}
-\subsection{Unstructured Data}
-Unstructured data is un-formatted, difficult to gather and analyze. Data shared from social media like trends, retweets, shares, and comments categorize as unstructured data. Customer promotions, customer profile like age, gender, address, email, taste preference, favorite dish, various milestones like birthdate, anniversary etc, along with family information is also an unstructured data. Weather and traffic information also constitutes as an important data to consider. \cite{www-restaurant}
+\begin{acks}
 
+  The authors would like to thank Dr. Gregor von Laszewski for his
+  support and suggestions to write this paper.
 
-\section{Collect Big Data/Consume}
-These various data attributes can be collected from the different system. Most of the data is generated inside the restaurant by the system like POS which captures all sales transactions. POS system can also break down sales by time, size of the party, menu items, and ingredients. The inventory provides information on suppliers, food, beverages, and gas and electricity bill. Payroll provides information on wages, salaries, employee schedule, and time off by the employees. Loyalty program and marketing promotions provides data regarding marketing of the restaurant.
-
-
-Outside data can be gathered through the various applications like OpenTable, Facebook, Twitter, Yelp, TripAdvisor, Foursquare, Urbanspoon or Instagram, weather and traffic sites. Information can be gathered from customer like his favorite menu/drink item, favorite table, special request, allergies, liking to the presentation, feedback on ambiance, service and food. \cite{www-restaurant}
-
-\section{Big Data Analytics/Recipe for Success}
-Benjamin Stanley, co-founder of Food Genius, suggests "A restaurant operator shouldn't just jump into big data unless they have a problem they are trying to solve"\cite{KooserAmandaC.2013BD}. Big data analytics can help with various analysis which can solve different issues but it's important to know the problem which needs to be solved. Menu analysis can help with deciding the cost of the item, popular menu item, how often items are ordered, the time when menu item ordered, ingredient used and if any ingredient needs to be substituted\cite{KooserAmandaC.2013BD}. Labor cost can be managed better by analyzing overtime pay, absenteeism, costs to sales, costs by department and server, tips, amount of time spent at the table, types of entrées sold and whether the server sells the special. This analysis can be used to motivate, train and provide incentives to the servers\cite{www-restaurant},\cite{KooserAmandaC.2013BD}. Guest check analytics can help determine what sells well, how often somebody orders certain items and detailed pricing analyses\cite{www-restaurant}. Customer profile analysis gives insight on demographics of the customer, ages, income level, their family information, kind of food they like, allergies, drink habits, places they dine out, special occasions and this analysis can be used to provide the personalized experience to the customer\cite{www-restaurant}. Servers can use customer profile analysis to suggest menu choices, celebrate birthdays or special occasions, or run specials to drive more business. Reservation system data analysis helps in understanding who all are coming, when they last visited, what they tend to order, are they celebrating any special occasion and accordingly then can decide on the menu\cite{www-bostonglobe}. Data mining of data from social media like Facebook, Twitter, Instagram, YouTube can help in understanding sentiments of the customer, social news, training topic, views on self and competitor restaurants, identify brand or restaurant fans\cite{JENNINGSLISA2015Mbds}. This mining also provides the capability to get feedback real time and respond at the same time. This information can be used to do targeted marketing for the specific audience\cite{JENNINGSLISA2015Mbds}. 
-
-\section{Solution and Tools Available}
-Fishbowl provides cost-effective data analytics solution to the restaurant industry using Hadoop and other technologies. Fishbowl integrated Hadoop with their marketing platform to provide guest analytics, menu management, media analytics, promotions and mobile platform to provide complete solutions.\cite{www-foodnewsfeed}\cite{www-fishbowl}
-
-\section{Real Life Examples/Flavorful Implementation}
-A quickservice chain monitors its drive-thru lanes to determine which items to display on its digital menu board. When lines are longer, the menu features items that can be prepared quickly. When lines are shorter, the menu features higher-margin items that take a bit longer to prepare. Those subtle changes in the menu board wouldn't be possible if the company couldn't tap into a steady stream of data in real time to make instantaneous adjustments.\cite{www-restaurant}
-
-
-Haute Dogs and Fries, a two-unit, quickservice restaurant in Alexandria, Va., leverages social media to connect with customers. Being small and community-focused allows the operation to quickly identify market trends and make offers in real-time, says co-owner Lionel Holmes. He monitors social media throughout the day and might post a lunch special at 11 a.m. or a dinner offer at 3 p.m. based on what is trending. Haute Dogs and Fries is on Twitter, Facebook and Instagram and uses email to reach customers and build loyalty.\cite{www-restaurant}
-
-
-Fig and Olive, a seven-location New York-based restaurant group, has used guest-management software to track more than 500,000 guests and \$17.5 million in checks. The restaurants have been able to customize the dining experience for individual guests and deliver results with targeted email communications. It's ``we miss you campaig`` offered complimentary crostini to guests who hadn't dined there in 30 days. The result: Almost 300 visits and more than \$36,000 in sales, translating into a return of more than seven times the cost of the program. Matthew Joseph, who leads technology and information systems for the company, says linking POS data with online reservations, plus monitoring social media mentions on Facebook, Twitter or TripAdvisor, helped Fig and Olive create its brand identity and build loyalty.\cite{www-restaurant}
-
-
- Dickeys Barbecue Pit, which operates 514 restaurants across the U.S., uses Smoke Stack system to provide near real-time feedback on sales and other key performance indicators. All of the data is examined every 20 minutes to enable immediate decisions if the sale is not at certain baseline at a certain store in the region then it enables them to deploy training or operation directly to that store. For example, if there is lower than expected sales one lunchtime, and have an amount of ribs there, then text invitation is sent to people in the local area for ribs special – to both equalize the inventory and catch up on sales.\cite{www-forbes}
-
-\section{Challenges of Using Big Data/Hell's Kitchen}
-The restaurant industry is very slow in terms of adopting or spending on new technologies due to small profit margins, high employee turnover and the overall cost of implementation\cite{www-bostonglobe}. Most of the restaurants are still using legacy software packages which are inadequate in dealing with the big data. These legacy software packages are cumbersome to upgrade or integrate with new technologies or data streams which are required for the big data analytics. It can take a lot of times to get data from old restaurant software to the data warehouse. Even if data is centralized, it's difficult for most of the restaurants to hire a data scientist to analyze data due to their costly salaries. Only big restaurant chain can afford such costly labor and tools needed for the big data application\cite{2015BDLC}. Another major challenge is the variety of big data source and format involved in restaurant industry like structured data in form of POS, inventory systems and unstructured data like social networking site or weather reports. Combining data from such various sources is big deal. There are financial challenges also as technology offered to work with big data is expensive which makes leveraging big data challenging for most of the restaurants.\cite{www-foodnewsfeed}
-
-\section{Conclusions}
-
-This paragraph will end the body of this sample document.  Remember
-that you might still have Acknowledgments or Appendices; brief samples
-of these follow.  There is still the Bibliography to deal with; and we
-will make a disclaimer about that here: with the exception of the
-reference to the \LaTeX\ book, the citations in this paper are to
-articles which have nothing to do with the present subject and are
-used as examples only.
-
-
-
-\appendix
-
-%Appendix A
-\section{Headings in Appendices}
-
-\subsection{Introduction}
-\subsection{Big Data for Restaurant/Ingredient}
-\subsubsection{Structured Data}
-\subsubsection{Unstructured Data}
-\subsection{Collect Big Data/Consume}
-\subsection{Big Data Analytics/Recipe for Success}
-\subsection{Solution and Tools Available}
-\subsection{Real Life Examples/Flavorful Implementation}
-\subsection{Challenges of Using Big Data}
-\subsection{Conclusions}
-\subsection{References}
-
+\end{acks}
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{report} 
+
+\appendix
+
+We include an appendix with common issues that we see when students
+submit papers. One particular important issue is not to use the
+underscore in bibtex labels. Sharelatex allows this, but the
+proceedings script we have does not allow this.
+
+When you submit the paper you need to address each of the items in the
+issues.tex file and verify that you have done them. Please do this
+only at the end once you have finished writing the paper. To d this
+cange TODO with DONE. However if you check something on with DONE, but
+we find you actually have not executed it correcty, you will receive
+point deductions. Thus it is important to do this correctly and not
+just 5 minutes before the deadline. It is better to do a late
+submission than doing the check in haste. 
+
+\input{issues}
 
 \end{document}
