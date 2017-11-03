@@ -48,6 +48,7 @@ Apache foundation describes Hadoop as ``The Apache Hadoop software library is a 
 \end{itemize}
 
 \subsection{Hadoop Common}
+Hadoop Common are the collection of the utilities to support the Hadoop modules. This is the core package which provide essential and basic service of the framework.
 
 \subsection{Hadoop Distributed File System (HDFS)}
 Hadoop Distributed File System (HDFS) is the default distributed file system provided by the Hadoop. HDFS serves as storage mechanism in the Hadoop framework. HDFC specifically designed to process large data set and run on low cost hardware. It is high fault tolerant which contains mechanism for quick fault detection and auto recovery. HDFS is designed to port across heterogeneous hardware and software platform. It does data computation on same node instead of moving data to the server which is faster as well as avoid network congestion. It provides scalability by adding or removing nodes in the HDFS cluster and can support hundreds of nodes in single cluster \cite{www-hdfs-arch}. Figure \ref{f:hdfs-arch} shows HDFS architecture.
@@ -56,11 +57,29 @@ Hadoop Distributed File System (HDFS) is the default distributed file system pro
   \caption{HDFS Architecture \cite{www-hdfs-arch}}\label{f:hdfs-arch}
 \end{figure}
 
-HDFS is based on master/slave architecture where NameNode is the master server and DataNodes are the slave nodes. There can be only one NameNode server which manages file system name space and all read write requests. NameNode doesn't store any data but contains all the meta-data about files and DataNodes. DataNode contains actual data and they can be multiple in numbers usually one per node. DataNodes are responsible for the create, delete, replicate of the datablocks on the node as per the instruction by the NameNode. It also sends heartbeat message to NameNode which helps in identifing the failure nodes. If heartbeat is not received by NameNode in specified interval then that DataNode is marked as dead and NameNode usage different DataNode.
+HDFS is based on master/slave architecture where NameNode is the master server and DataNodes are the slave nodes. There can be only one NameNode server which manages file system name space and all read write requests. NameNode doesn't store any data but contains all the meta-data about files and DataNodes. DataNode contains actual data and they can be multiple in numbers usually one per node. DataNodes are responsible for the create, delete, replicate of the datablocks on the node as per the instruction by the NameNode. DataNode also sends block-report to NameNode which has list of all blocks on the DataNode. DataNode sends heartbeat message to NameNode which helps in identifying the failure nodes. If heartbeat is not received by NameNode in specified interval then that DataNode is marked as dead and NameNode usage different DataNode. Figure \ref{f:hdfs-read} and \ref{f:hdfs-write} depicts read and write in HDFS respectively.
+
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/hdfsRead.PNG}
+  \caption{HDFS Read \cite[Ch.\ 3, p. 38]{AchariShiva2015HE}}\label{f:hdfs-read}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/hdfsWrite.PNG}
+  \caption{HDFS Write \cite[Ch.\ 3, p. 39]{AchariShiva2015HE}}\label{f:hdfs-write}
+\end{figure}
+
 
 \subsection{Hadoop YARN}
+Hadoop YARN (Yet Another Resource Negotiator) provides cluster resource management which helps in running multiple distributed application in Hadoop. YARN consists of 3 components \emph{ResourceManager (RM), NodeManager (NM)} and \emph{ApplicationMaster (AM)}. ResourceManager is the master process which manages resources across the nodes. NodeManager is responsible for the container and provide resource usage to the ResourceManager. ApplicationMaster is responsible for getting resources from ResourceManager and work with NodeManager to execute the task \cite{www-apache-yarn}. YARN makes it possible to run different application on Hadoop platform which makes it scalable and integrable \cite[Ch.\ 3, p. 65]{AchariShiva2015HE}.
+Figure \ref{f:yarn-arch} shows YARN architecture.
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/yarnArch.PNG}
+  \caption{YARN Architecture \cite{www-apache-yarn}}\label{f:yarn-arch}
+\end{figure}
 
 \subsection{Hadoop MapReduce}
+Hadoop MapReduce is a framework which provides capability to process vast amount of data in distributed manner. Processing is done in parallel on various nodes utilizing local machine processor and memory which results in high computation power. Framework provides fault tolerance along with supporting large clusters usually thousands of nodes. Typical framework processing is to split input data into independent chunks and then processed by \emph{map} tasks in parallel. Sort the output of the map task and then provide that as input to \emph{reduce} task for aggregate processing. Two important class in this framework are org.apache.hadoop.mapreduce.Mapper and org.apache.hadoop.mapreduce.Reducer. They respectively provides map and reduce method to process the data. 
 
 \subsection{Big Data Support}
 
