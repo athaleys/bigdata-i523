@@ -23,6 +23,7 @@
 * 10/8/2017 - submitted paper1, created folder structure for paper2
 * 10/20/2017 - fixed paper1 review issues, reviewed paper HID203 - Big Data Analytics using Spark, setup new template for paper2 in sharelatex
 * 10/27/2017 - started adding content to paper2, research for paper2, submitted paper1 in turnitin, resolved paper 1 issues
+* 11/3/2017 - worked on paper 2
 
 # Project
 
