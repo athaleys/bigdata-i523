@@ -24,7 +24,7 @@ paper2:
     chapter: Technology
     hid:
         - 302
-    status: 50%
+    status: 100%
     title: Hadoop and MongoDB in support of Big Data Applications and Analytics
     type: latex
     url: https://github.com/bigdata-i523/hid302/paper2/report.pdf
