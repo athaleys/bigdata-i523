@@ -8,7 +8,7 @@
 * 9/20/2017 - gone through 3.5. e-Commerce and LifeStyle Case Study
 
 # Practice
-
+* 11/10/2017 - installed virtual box on windows 10 which crashed whole OS, couldnt recover after uninstall of virtual box, re-installed windoes 10, installed anaconda and started python practice
 
 # Writing
 * 9/10/2017 - Gone thhrough lecture given by Simon Peyton Jones on “How to write a paper”
@@ -24,6 +24,7 @@
 * 10/20/2017 - fixed paper1 review issues, reviewed paper HID203 - Big Data Analytics using Spark, setup new template for paper2 in sharelatex
 * 10/27/2017 - started adding content to paper2, research for paper2, submitted paper1 in turnitin, resolved paper 1 issues
 * 11/3/2017 - worked on paper 2
+* 11/5/2017 - Completed and submitted paper 2
 
 # Project
 
