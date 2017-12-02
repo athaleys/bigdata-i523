@@ -47,8 +47,8 @@ project:
         we would like to analyze ingredients getting used in recipe across cuisines.
         This would be the quest to find out most used ingredient globally and across various cuisines.
         We would like to use learning from my paper 2 about MongoDB if required in this project.
-   url: https://github.com/bigdata-i523/hid302/project/report.pdf
+    url: https://github.com/bigdata-i523/hid302/project/report.pdf
     type: project
-    status: 20%
+    status: 50%
     chapter: Business
     
