@@ -110,6 +110,40 @@ Certain ingredients like salt or water etc should be avoided from the analysis a
 
 \subsection{Analysis and Findings}
 
+\subsubsection{Recipe Distribution By Cuisine}
+We first analyze entire dataset to understand the total number of recipes and their distribution across various cuisines. We use Pythons Panda library to get the total recipe count as 39774 and plot the distribution. Figure \ref{f:Number_of_recipes_by_cuisine} shows number of recipes per cuisine. Dataset is heavily dominated by Italian cuisine followed by Mexican cuisine and with very less recipes from Russian and Brazilian cuisines. This also highlights another shortcoming of the dataset that it doesn't have equal representation of all cuisines which might give us biased analysis.
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/Number_of_recipes_by_cuisine.png}
+  \caption{Recipe Distribution By Cuisine }\label{f:Number_of_recipes_by_cuisine}
+\end{figure}
+
+\subsubsection{Most Used Ingredients All Cuisines}
+Second analysis is carried out to understand top 20 ingredients getting used across cuisine or globally. Ingredient \emph{Salt} is obvious topper followed by \emph{Oil} and \emph{Onions}. This also proves our craving for saltiness and fat. Figure \ref{f:Ingredient_Distribution} shows top 20 ingredient across cuisines. 
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/Ingredient_Distribution.png}
+  \caption{Top 20 Ingredients }\label{f:Ingredient_Distribution}
+\end{figure}
+
+\subsubsection{Ingredients Distribution By Cuisines}
+Third analysis is carried out to understand key ingredient for each cuisine. This key ingredients defines those cuisines and provide unique test characterized by that cuisine. We limited ingredient list to top 10 to get the key ingredients for each cuisine. Figure \ref{f:italian_10_most_used_ingredients} shows top 10 key ingredient used in the Italian cuisines. 
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/italian_10_most_used_ingredients.png}
+  \caption{Italian Top 10 Ingredients }\label{f:italian_10_most_used_ingredients}
+\end{figure}
+
+\subsubsection{Ingredients Relationship}
+Forth analysis is carried out to understand relationship between the ingredient to find out ingredient clusters. This analysis help us understand the ingredient combinations which can be used together to provide great dish every time. This model can be used to predict ingredients for certain recipe based on the cluster. We used Gephi tool to analyze and produce graph for this analysis. Gephi accepts network structure in terms of Node and Edge relationship. We created this network using python by relating all ingredients present in recipe with each other. Ingredients becomes the node and source and target nodes become the edges. These network files generated in excel spreadsheet are converted to CSV format and imported into the Gephi tool. Import created 5405 Nodes and 290828 edges for processing and analysis. Force Atlas 2 layout present in Gephi has been applied to the network which brings nodes with higher weights and shared connections closer to each other. We also used Gephi Data Laboratory to clean up duplicate or unwanted nodes. Filtering based on Degree Range and Edge Weight has been applied on data to reduce node and edges to get graph which can be used for analysis and avoid crashing Gephi due to large data. Modularity statistic uncovered 5 ingredient clusters which can be identified by different color in the graph.
+Figure \ref{f:ingredient_modularity} shows ingredient cluster of more than 1000 nodes. 
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/ingredient_modularity.png}
+  \caption{Ingredient Cluster }\label{f:ingredient_modularity}
+\end{figure}
+
+Figure \ref{f:ingredient_modularity100} shows ingredient cluster of around 100 nodes. 
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{images/ingredient_modularity100.png}
+  \caption{ingredient Cluster 100 Nodes }\label{f:ingredient_modularity100}
+\end{figure}
 
 \subsection{Short Comings/Future Work}
 
