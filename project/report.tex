@@ -265,7 +265,7 @@ The third analysis is carried out to understand key ingredient for each cuisine.
 
 
 \subsubsection{Ingredients Relationship}
-Forth analysis is carried out to understand the relationship between the ingredient to find out ingredient clusters. This analysis helps us understand the ingredient combinations which can be used together to provide great dish every time. This model can be used to predict ingredients for certain recipe based on the cluster. We used Gephi tool to analyze and produce the graph for this analysis. Gephi accepts network structure in terms of Node and Edge relationship. We created this network using python by relating all ingredients present in the recipe with each other. Ingredients become the node and source and target nodes become the edges. These network files generated in excel spreadsheet are converted to CSV format and imported into the Gephi tool. Import created 5405 Nodes and 290828 edges for processing and analysis. Force Atlas 2 layout present in Gephi has been applied to the network which brings nodes with higher weights and shared connections closer to each other. We also used Gephi Data Laboratory to clean up duplicate or unwanted nodes. Filtering based on Degree Range and Edge Weight has been applied to data to reduce node and edges to get the graph which can be used for analysis and avoid crashing Gephi due to large data. Modularity statistic uncovered 5 ingredient clusters which can be identified by different color in the graph. This cluster can approximately related to the cuisines present in our dataset and confirms our earlier analysis of ingredient by cuisine.
+Forth analysis is carried out to understand the relationship between the ingredient to find out ingredient clusters. This analysis helps us understand the ingredient combinations which can be used together to provide great dish every time. This model can be used to predict ingredients for certain recipe based on the cluster. We used Gephi tool to analyze and produce the graph for this analysis. Gephi accepts network structure in terms of Node and Edge relationship. We created this network using python by relating all ingredients present in the recipe with each other. Ingredients become the node and source and target nodes become the edges. These network files generated in excel spreadsheet and converted to CSV format and imported into the Gephi tool. Import created 5405 Nodes and 290828 edges for processing and analysis. Force Atlas 2 layout present in Gephi has been applied to the network which brings nodes with higher weights and shared connections closer to each other. We also used Gephi Data Laboratory to clean up duplicate or unwanted nodes. Filtering based on Degree Range and Edge Weight has been applied to data to reduce node and edges to get the graph which can be used for analysis and avoid crashing Gephi due to large data. Modularity statistic uncovered 5 ingredient clusters which can be identified by different colors in the graph. This cluster can approximately related to the cuisines present in our dataset and confirms our earlier analysis of ingredient by cuisine.
 \begin{itemize}
 \item Orange - Mexican
 \item Brown  - Indian
@@ -274,13 +274,13 @@ Forth analysis is carried out to understand the relationship between the ingredi
 \item Gray   - Southern US
 \end{itemize}
 
-Figure \ref{f:ingredient_modularity} shows ingredient cluster of more than 1000 nodes. 
+Figure \ref{f:ingredient_modularity} shows ingredient cluster of more than 1000 nodes. This graph is nice to look at but difficult to read due to lot many nodes and edges in the graph. 
 \begin{figure}[!ht]
   \centering\includegraphics[width=\columnwidth]{images/ingredient_modularity.png}
   \caption{Ingredient Cluster }\label{f:ingredient_modularity}
 \end{figure}
 
-Figure \ref{f:ingredient_modularity100} shows ingredient cluster of around 100 nodes. 
+Figure \ref{f:ingredient_modularity100} shows ingredient cluster of around 100 nodes. We generated this graph by reducing nodes and edges to make it more readable. This graph provides us with our top 5 cuisine clusters. 
 \begin{figure}[!ht]
   \centering\includegraphics[width=\columnwidth]{images/ingredient_modularity100.png}
   \caption{ingredient Cluster 100 Nodes }\label{f:ingredient_modularity100}
