@@ -29,7 +29,7 @@ paper2:
     type: latex
     url: https://github.com/bigdata-i523/hid302/paper2/report.pdf
 project:
-    review: 
+    review:
     author:
         - Sushant Athaley
     hid:
@@ -39,16 +39,17 @@ project:
         The ingredients used in the recipe can provide a lot of information
         about the type of cuisine and culture. It is one of the important
         factors to decide the dish pricing in the restaurant and can provide
-        cost analysis based on the ingredient cost. Replacing one ingredient with
-        another substitute ingredient can change the cost dramatically and can make
-        you profitable. It might be possible to predict the type of weather area
-        receives based on the ingredients as well as the cuisine type.
-        In continuation of my paper 1 of big analytics in the restaurant industry,
-        we would like to analyze ingredients getting used in recipe across cuisines.
-        This would be the quest to find out most used ingredient globally and across various cuisines.
-        We would like to use learning from my paper 2 about MongoDB if required in this project.
+        cost analysis based on the ingredient cost. Replacing one
+        ingredient with another substitute ingredient can change the cost
+        dramatically and can make you profitable. It might be possible
+        to predict the type of weather area receives based on the ingredients
+        as well as the cuisine type. In continuation of my paper 1 of
+        big analytics in the restaurant industry, we would like to analyze
+        ingredients getting used in recipe across cuisines. This would be 
+        the quest to find out most used ingredient globally and across 
+        various cuisines. We would like to use learning from my paper 2 
+        about MongoDB if required in this project.
     url: https://github.com/bigdata-i523/hid302/project/report.pdf
     type: project
     status: 100%
     chapter: Business
-    
