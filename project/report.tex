@@ -1,6 +1,6 @@
 \documentclass[sigconf]{acmart}
 
-\input{format/i523}
+\input{format/i523.tex}
 
 \begin{document}
 \title{Recipe Ingredient Analysis}
@@ -72,7 +72,7 @@ DataSet is loaded through Python script and further processed to clean the data.
 Network files created by Python are imported in Gephi to produce the graph for the visualization. Gephi tools data laboratory is used to clean up the data and filters are applied to provide usable network visualization. 
 
 \subsection{Dataset}
-The dataset for this study is sourced from Kaggle application \cite{www-kaggle}. This dataset is publicly available and featured in ``What's Cooking?'' competition. This dataset is in JSON format and of 12MB size. This dataset contains recipe id, cuisine and list of ingredients as described in Figure \ref{c:data-structure}.
+The dataset for this study is sourced from Kaggle application \cite{www-kaggle}. This dataset is publicly available and featured in \emph{What's Cooking?} competition. This dataset is in JSON format and of 12MB size. This dataset contains recipe id, cuisine and list of ingredients as described in Figure \ref{c:data-structure}.
 \begin{figure}[htb]
 \begin{verbatim}
 {
@@ -155,14 +155,14 @@ vietnamese      &        825\\
 \end{table}
 
 \subsubsection{Most Used Ingredients All Cuisines}
-The second analysis is carried out to understand top 20 ingredients getting used across cuisine or globally. Ingredient \emph{Salt} is obvious topper followed by \emph{Oil} and \emph{Onions}. This also proves our craving for saltiness and fat. Figure \ref{f:Ingredient_Distribution} shows top 20 ingredient across cuisines. 
+The second analysis is carried out to understand top 20 ingredients getting used across cuisine or globally. Ingredient \emph{Salt} is obvious topper followed by \emph{Oil} and \emph{Onions}. This also proves our craving for salty and fatty food. Top 20 ingredient also contain duplicate ingredient like garlic and garlic clove, salt and kosher salt, eggs and large eggs which shows shortcoming of the dataset. Also ingredient like salt, oil and water could be avoided to get analysis of real ingredients as these are commonly use ingredient and doesn't contribute much to the study. Figure \ref{f:Ingredient_Distribution} shows top 20 ingredient across cuisines. 
 \begin{figure}[!ht]
   \centering\includegraphics[width=\columnwidth]{images/Ingredient_Distribution.png}
   \caption{Top 20 Ingredients }\label{f:Ingredient_Distribution}
 \end{figure}
 
 \subsubsection{Ingredients Distribution By Cuisines}
-The third analysis is carried out to understand key ingredient for each cuisine. These key ingredients define those cuisines and provide unique test characterized by that cuisine. We limited ingredient list to top 10 to get the key ingredients for each cuisine. Figure \ref{f:italian_10_most_used_ingredients}, \ref{f:brazilian_10_most_used_ingredients}, \ref{f:british_10_most_used_ingredients}, \ref{f:cajun_creole_10_most_used_ingredients}, \ref{f:chinese_10_most_used_ingredients}, \ref{f:filipino_10_most_used_ingredients}, \ref{f:french_10_most_used_ingredients}, \ref{f:greek_10_most_used_ingredients}, \ref{f:indian_10_most_used_ingredients}, \ref{f:irish_10_most_used_ingredients}, \ref{f:jamaican_10_most_used_ingredients}, \ref{f:japanese_10_most_used_ingredients}, \ref{f:korean_10_most_used_ingredients}, \ref{f:mexican_10_most_used_ingredients}, \ref{f:moroccan_10_most_used_ingredients}, \ref{f:russian_10_most_used_ingredients}, \ref{f:southern_us_10_most_used_ingredients}, \ref{f:spanish_10_most_used_ingredients}, \ref{f:thai_10_most_used_ingredients}, \ref{f:vietnamese_10_most_used_ingredients}  shows top 10 key ingredient used in the corresponding cuisines. 
+The third analysis is carried out to understand key ingredient for each cuisine. These key ingredients define those cuisines and provide unique test characterized by that cuisine. We limited ingredient list to top 10 to get the key ingredients for each cuisine. Study shows \emph{Italian} cuisine is characterized by olive oil, garlic, cheese, black pepper, onion and butter, \emph{Mexican} by onion, cumin, garlic, chili powder, jalapeno chilies, sour cream, tortillas and avocado, \emph{Southern US} by butter, all-purpose flour, sugar, eggs, baking powder, milk and butter milk, \emph{Indian} by onion, garam masala, turmeric, garlic, cumin and oil, \emph{Chinese} by soy sauce, sesame oil, corn starch, sugar, garlic, green onions and scallions. Similarly it is applicable for all other cuisines present in the dataset and it is very close representation of all cuisines. Figure \ref{f:italian_10_most_used_ingredients}, \ref{f:brazilian_10_most_used_ingredients}, \ref{f:british_10_most_used_ingredients}, \ref{f:cajun_creole_10_most_used_ingredients}, \ref{f:chinese_10_most_used_ingredients}, \ref{f:filipino_10_most_used_ingredients}, \ref{f:french_10_most_used_ingredients}, \ref{f:greek_10_most_used_ingredients}, \ref{f:indian_10_most_used_ingredients}, \ref{f:irish_10_most_used_ingredients}, \ref{f:jamaican_10_most_used_ingredients}, \ref{f:japanese_10_most_used_ingredients}, \ref{f:korean_10_most_used_ingredients}, \ref{f:mexican_10_most_used_ingredients}, \ref{f:moroccan_10_most_used_ingredients}, \ref{f:russian_10_most_used_ingredients}, \ref{f:southern_us_10_most_used_ingredients}, \ref{f:spanish_10_most_used_ingredients}, \ref{f:thai_10_most_used_ingredients}, \ref{f:vietnamese_10_most_used_ingredients}  shows top 10 key ingredient used in the corresponding cuisines. 
 \begin{figure}[!ht]
   \centering\includegraphics[width=\columnwidth]{images/italian_10_most_used_ingredients.png}
   \caption{Top 10 Ingredients }\label{f:italian_10_most_used_ingredients}
