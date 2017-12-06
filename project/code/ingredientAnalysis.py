@@ -22,7 +22,7 @@ figCuisineDist = dfTrain.cuisine.value_counts().plot(kind="bar", title="Recipies
 figCuisineDist = figCuisineDist.get_figure()
 figCuisineDist.tight_layout()
 figCuisineDist.savefig('./images/Number_of_recipes_by_cuisine.png')
-
+plt.clf()
 
 #plot ingredient distribution across recipes
 #print(dfTrain.ingredients)
@@ -45,7 +45,7 @@ ingredient_fig.invert_yaxis()
 ingredient_fig = ingredient_fig.get_figure()
 ingredient_fig.tight_layout()
 ingredient_fig.savefig("./images/Ingredient_Distribution.png")
-
+plt.clf()
 
 #plot 10 most used ingredient by cuisine
 #group data by cuisine
@@ -70,4 +70,5 @@ for cuisine in dfCuisineGrouped.groups.keys():
     fig = fig.get_figure()
     fig.tight_layout()
     fig.savefig("./images/" + cuisine + "_10_most_used_ingredients.png")
+    plt.clf()
 
