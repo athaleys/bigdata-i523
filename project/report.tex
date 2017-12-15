@@ -119,7 +119,7 @@ code
 
 Python Scripts
 \begin{itemize}
-\item \emph{ingredientAnalysis.py} - This python script loads dataset from datafile train.json present in \emph{data} directory and process dataset to find out recipe distribution across cuisines, top 20 ingredient used across cuisines and top 10 key ingredients for every cuisine. The graph generated during analysis is stored in \emph{images} folder.
+\item \emph{ingredientAnalysis.py} - This python script loads dataset from datafile train.json present in \emph{data} directory and process dataset to find out recipe distribution across cuisines, top 20 ingredient used across cuisines and top 10 key ingredients for every cuisine. The graph generated during analysis is stored in \emph{images} folder. This codes inspiration can be found out at Kaggle's What Cooking competition which we modified as per our project need \cite{www-kaggle-ingten}, \cite{www-www-kaggle-ingtenbyc}.
 \item \emph{ingCluster.py} - loads dataset from datafile train.json present in \emph{data} directory and process dataset to create relationship file required by Gephi in excel format. It establishes ingredients relationship by relating ingredient in recipe with each other to generate \emph{nodes.xlsx} and \emph{edges.xlsx} files and stores in \emph{data} directory. These generated files are then imported into the Gephi to create the visualization.
 \item \begin{verbatim}geph_ing_big_data.gephi\end{verbatim} - This is project file from Gephi which can be re-opened in Gephi software to view or re-run the analysis.
 \end{itemize}
